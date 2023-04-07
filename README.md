@@ -32,6 +32,12 @@ https://www.coolapk.com/feed/38579891?shareKey=NGI3ZGZlZTM4MDBjNjMwMzdlM2M~&shar
 
 {{note_en.DATA}} 
 {{note_ch.DATA}}
+--------课表-------- 
+ 8:30-10:05 {{firstClass.DATA}} 
+ 10:25-12:00 {{secondClass.DATA}} 
+ 2:30-4:05 {{thirdClass.DATA}} 
+ 4:15-5:50 {{fourthClass.DATA}} 
+ 6:20-9:40 {{fifthClass.DATA}}
 
 
 天气key生成教程
