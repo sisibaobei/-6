@@ -192,7 +192,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "fifthClass": {
                     "value": theClass[4],
                     "color": get_color()
-                }
+                },
         }
     }
     for key, value in birthdays.items():
