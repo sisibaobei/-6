@@ -173,8 +173,8 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
             "note_ch": {
                 "value": note_ch,
                 "color": get_color()
-            }
-	"firstClass": {
+            },
+	  "firstClass": {
                     "value": theClass[0],
                     "color": get_color()
                 },
