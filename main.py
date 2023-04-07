@@ -123,6 +123,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     day = localtime().tm_mday
     today = datetime.date(datetime(year=year, month=month, day=day))
     week = week_list[today.isoweekday() % 7]
+    theClass = classes[today.weekday()]
     # 获取在一起的日子的日期格式
     love_year = int(config["love_date"].split("-")[0])
     love_month = int(config["love_date"].split("-")[1])
@@ -173,6 +174,26 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": note_ch,
                 "color": get_color()
             }
+	"firstClass": {
+                    "value": theClass[0],
+                    "color": get_color()
+                },
+                "secondClass": {
+                    "value": theClass[1],
+                    "color": get_color()
+                },
+                "thirdClass": {
+                    "value": theClass[2],
+                    "color": get_color()
+                },
+                "fourthClass": {
+                    "value": theClass[3],
+                    "color": get_color()
+                },
+                "fifthClass": {
+                    "value": theClass[4],
+                    "color": get_color()
+                }
         }
     }
     for key, value in birthdays.items():
