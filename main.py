@@ -61,8 +61,8 @@ def get_birthday(birthday, year, today):
     birthday_year = birthday.split("-")[0]
     # 判断是否为农历生日
     if birthday_year[0] == "r":
-        r_mouth = int(birthday.split("-")[1])
-        r_day = int(birthday.split("-")[2])
+       r_mouth = int(birthday.split("-")[1])
+       r_day = int(birthday.split("-")[2])
         # 获取农历生日的今年对应的月和日
         try:
             birthday = ZhDate(year, r_mouth, r_day).to_datetime().date()
@@ -76,8 +76,8 @@ def get_birthday(birthday, year, today):
         year_date = date(year, birthday_month, birthday_day)
     else:
         # 获取国历生日的今年对应月和日
-birthday_month = int(birthday.split("-")[1])
-birthday_day = int(birthday.split("-")[2])
+    birthday_month = int(birthday.split("-")[1])
+    birthday_day = int(birthday.split("-")[2])
 # 今年生日
 year_date = date(year, birthday_month, birthday_day)
 # 计算生日年份，如果还没过，按当年减，如果过了需要+1
