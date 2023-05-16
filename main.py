@@ -64,7 +64,7 @@ def get_birthday(birthday, year, today):
        r_mouth = int(birthday.split("-")[1])
        r_day = int(birthday.split("-")[2])
         # 获取农历生日的今年对应的月和日
-        try:
+    try:
             birthday = ZhDate(year, r_mouth, r_day).to_datetime().date()
         except TypeError:
             print("请检查生日的日子是否在今年存在")
