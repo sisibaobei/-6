@@ -113,8 +113,12 @@ def get_sentence_of_day():
 
 
 def send_message(to_user, access_token, region_name, weather, temp, wind_dir, note_ch, note_en):
-url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={}".format(access_token)
-week_list = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
+    url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={}".format(access_token)
+    headers = {
+        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
+    }
+ week_list = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
 year = localtime().tm_year
 month = localtime().tm_mon
 day = localtime().tm_mday
